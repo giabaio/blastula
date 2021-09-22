@@ -24,7 +24,11 @@ font-family: Helvetica, sans-serif;
 font-size: 14px;
 }
 .content {
+/*----------------------------------------------------------------------------*/
+/* Added GB. This changes the appearance of the email sent within the browser */
 background-color: white;
+width: 100!important;
+/*----------------------------------------------------------------------------*/
 }
 .content .message-block {
 margin-bottom: 0; /* 24px; */
@@ -49,21 +53,21 @@ margin-bottom: 0; /* 24px; */
 }
 </style>
 </head>
-<body style="background-color:#f6f6f6;font-family:Helvetica, sans-serif;color:#222;margin:0;padding:0;">
+<body style="background-color:white;font-family:Arial, sans-serif;color:#222;margin:0;padding:0;">
 <table width="100%" align="center" class="container" style="max-width: $content-width$;">
 <tr>
 <td style="padding:0px;">
-<div class="header" style="font-family:Helvetica, sans-serif;color:#999999;font-size:12px;font-weight:normal;margin:0 0 0 0;text-align:center;">
+<div class="header" style="font-family:Arial, sans-serif;color:#999999;font-size:12px;font-weight:normal;margin:0 0 0 0;text-align:center;">
 $for(include-before)$
 $include-before$
 $endfor$
 </div>
 <table width="100%" class="content" style="background-color:white;">
 <tr>
-<td style="padding:0px;margin:-24px -12px -24px -12px;">$body$</td>
+<td style="padding:0px;">$body$</td>
 </tr>
 </table>
-<div class="footer" style="font-family:Helvetica, sans-serif;color:#999999;font-size:12px;font-weight:normal;margin:24px 0 0 0;">
+<div class="footer" style="font-family:Arial, sans-serif;color:#999999;font-size:12px;font-weight:normal;margin:24px 0 0 0;">
 $for(include-after)$
 $include-after$
 $endfor$
